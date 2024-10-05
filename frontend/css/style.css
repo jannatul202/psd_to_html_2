@@ -1,0 +1,346 @@
+/*
+  Theme Name: psd_to_html_two
+  Support: 
+  Description:   
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Google Fonts
+02. Variable CSS start
+03. common css
+04. header_sec css
+05. nav_sec css
+06. hero_sec css
+07. card_sec css
+08. content_sec css
+09. footer_sec css
+10. copyright_sec css
+
+============================
+*/
+/*=============================
+  01. Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/*=============================
+ 02. Variable CSS start
+===============================*/
+ :root {
+    --heading-font-family: "Gowun Batang", system-ui;
+    --peragraph-font-family: "Open Sans", system-ui;
+    --body-bg:#eaf2f4;
+    --primary: #81201a;
+    --light-border:#adbcbf;
+    --light-sec-bg:#e4dfcb;
+    --dark-sec-bg:#cec6a2;
+    --light-primary: #d5e5e8;
+    --dark-primary: #3e0d09;
+    --heading-color:#660000;
+    --white: #ffffff;
+    --black:#282627;
+    --off-white:#e7ecef;
+    --transition: 0.4s ease-in-out;;
+}
+  
+/* =================================
+03. common css
+=====================================*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;  
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--body-font-family);
+    line-height: var(--body-line-height);
+    color: var(--black);
+    width:1150px;
+    margin: 0 auto;
+}
+h1, h2,h3,h4,h5,h6,a{
+    font-family: var(--heading-font-family);
+}
+p{
+    font-family: var(--peragraph-font-family);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: var(--black);
+    text-decoration: none;
+}
+/* =================================
+04. header_sec css
+=====================================*/
+.header_sec{
+    overflow: hidden;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 30px 20px;
+}
+.header_sec .header_logo{
+    float: left;
+    width: 385px;
+} 
+.header_sec .header_logo .logo {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 400;
+}
+.header_sec .header_logo .logo_txt {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.header_sec .header_menu {
+    float: right;
+    width: 700px;
+    margin-right: -20px;
+}
+.header_sec .header_menu ul{
+    margin-top: 20px;
+} 
+.header_sec .header_menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 5px;
+} 
+.header_sec .header_menu ul li a {
+    color: var(--white);
+    font-size: 22px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-right: 30px;
+    border-top: 0px solid var(--black);
+    transition: var(--transition);
+    font-weight: 600;
+    padding-left: 5px;
+}
+.header_sec .header_menu ul li p{
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 5px;
+    font-weight: 300;
+    padding-left: 5px;
+}  
+.header_sec .header_menu ul li a:hover{
+    border-top: 3px solid var(--black);
+    color: var(--black);
+    padding-top: 10px;
+    padding-right: 30px;
+    transition: var(--transition);
+    font-weight: 600;
+}  
+/* =================================
+05. hero_sec css
+=====================================*/ 
+.hero_sec{
+    overflow: hidden;
+    background-color: var(--dark-primary);
+    color: var(--white);
+    padding: 30px 20px 50px 20px;
+}
+.hero_sec .hero_content{
+    float: left;
+    width: 650px;
+}
+.hero_sec .hero_content .hero_tittle {
+    font-size: 58px;
+    line-height: 58px;
+    font-weight: 400;
+}
+.hero_sec .hero_content .description {
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 29px;
+}
+.hero_sec .hero_img{
+   text-align: right;
+}
+.hero_sec .hero_img .hero_images {
+    float: right;
+    width: 440px;
+}
+.hero_sec .hero_img .hero_images img {
+    margin: 5px;
+}
+/* =================================
+06. card_sec css
+=====================================*/  
+.card_sec{
+    padding: 40px 0px;
+    background: var(--light-sec-bg);
+}      
+.card_sec .card_sec_main{
+    padding: 20px;
+    margin: 0 auto;
+    width: 1050px;
+    background: var(--white);
+    margin-top: -70px;
+}  
+.card_sec .card_sec_main .cards {
+    width: 310px;
+    display: inline-block;
+    margin-left: 24px;
+}
+.card_sec .card_sec_main .cards .card_head {
+    margin-bottom: 10px;
+} 
+.card_sec .card_sec_main .cards .card_body .card_tittle {
+    font-size: 24px;
+    line-height: 24px;
+    color: #660000;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.card_sec .card_sec_main .cards .card_body .card_list ul li {
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 20px;
+    font-family: var(--peragraph-font-family);
+}  
+.card_sec .card_sec_main .cards .card_body .description {
+    font-size: 16px;
+    line-height: 24px;
+}  
+.card_sec .card_sec_main .cards .card_footer a {
+    display: block;
+    padding-top: 20px;
+    color: var(--black);
+    font-family: var(--peragraph-font-family);
+    font-weight: 600;
+} 
+/* =================================
+07. footer_sec css
+=====================================*/  
+.footer_sec{
+    padding: 40px 20px;
+    overflow: hidden;
+    background: var(--dark-sec-bg);
+} 
+.footer_sec .footer_items .footer_contact{
+    float: left;
+    width: 380px;
+} 
+.footer_sec .footer_items .footer_contact .for_name{
+    float: left;
+    width: 130px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+} 
+.footer_sec .footer_items .footer_contact .for_email {
+    float: right;
+    width: 180px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}  
+.footer_sec .footer_items .footer_contact .for_massage{
+    margin-bottom: 10px;
+}
+.footer_sec .footer_items .footer_contact .for_massage textarea{
+    width: 380px;
+    height: 135px;
+    border: none;
+    margin-top: 5px;
+} 
+.footer_sec .footer_items .footer_contact h5 {
+    font-size: 29px;
+    line-height: 29px;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.footer_sec .footer_items .footer_contact input[type="text"], input[type="email"] {
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    width: 180px;
+}
+.footer_sec .footer_items .footer_contact form label {
+    font-family: var(--peragraph-font-family);
+    font-size: 17px;
+    line-height: 17px;
+}
+.footer_sec .footer_items .footer_contact .btn .con_btn {
+    padding: 5px 12px;
+    border: none;
+    margin-right: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: var(--peragraph-font-family);
+    font-weight: 400;
+}
+.footer_sec .footer_items .footer_doc{
+    float: right;
+    width: 600px;
+} 
+.footer_sec .footer_items .footer_doc .iteams .footer_doc_iteam {
+    float: left;
+    width: 225px;
+    margin-right:15px;
+}
+.footer_sec .footer_items .footer_doc .iteams .footer_doc_iteam:last-child{
+    margin-right:0px;
+}
+.footer_sec .footer_items .footer_doc .iteams .footer_doc_iteam h5 {
+    font-size: 29px;
+    line-height: 29px;
+    border-bottom: 2px solid;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.footer_sec .footer_items .footer_doc .iteams .footer_doc_iteam .description {
+    font-size: 16px;
+    line-height: 23px;
+    width: 175px;
+    margin-bottom: 28px;
+}
+.footer_sec .footer_items .footer_doc .iteams .for_massage{
+    padding-top: 20px;
+}
+.footer_sec .footer_items .footer_doc {
+    width: 710px;
+}
+label.for_bg {
+    background: #e1ded0;
+    padding: 5px;
+    margin-right:5px;
+}
+input.ex_email {
+    padding: 6px;
+    width: 360px;
+}
+button.go_btn {
+    padding: 6px 10px;
+    border: none;
+    margin-left: 5px;
+}
+/* =================================
+08. copyright_sec css
+=====================================*/ 
+.copyright_sec{
+    color: var(--white);
+    background: var(--dark-primary);
+    padding: 10px 40px;
+} 
+.copyright_sec .copyr{
+    float: left;
+} 
+.copyright_sec .author{
+    text-align: right;
+} 
+/* =================================
+09. common css
+=====================================*/
+/* =================================
+10. common css
+=====================================*/
