@@ -251,6 +251,7 @@ a{
     height: 135px;
     border: none;
     margin-top: 5px;
+    padding:10px;
 } 
 .footer_sec .footer_items .footer_contact h5 {
     font-size: 29px;
